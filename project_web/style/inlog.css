@@ -1,0 +1,213 @@
+:root {
+    --flixbus-groen: #76D528;
+    --flixbus-oranje: rgb( 253, 151, 40);
+}
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body > header {
+    background-color: var(--flixbus-groen);
+    height: 3.2em;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+
+
+header img {
+    width:auto;
+    height: 50px;
+    align-self: center;
+    
+}
+
+nav ul {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self:flex-end;
+    background-color: blue;
+    margin:auto;
+}
+
+
+
+p {
+    margin: 1em;
+    box-sizing: border-box;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    color: white;   
+}
+
+li > a {
+    color:white;
+}
+
+body{
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    border-radius: .5em;
+    margin: 0.5em;
+    margin-top: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: solid 1px #E1E1E1;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 80%;
+    
+}
+
+h1{
+    
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: 100;
+}
+
+
+p {
+    text-align: center;
+}
+
+a {
+    color: var(--flixbus-oranje);
+    text-decoration:none;
+}
+
+form > p {
+    display: flex;
+    justify-content: flex-start;
+    color: #E1E1E1;
+    margin-left: 0;
+    text-align: center;
+    font-weight: 100;
+}
+
+label {
+    color: #E1E1E1;
+    font-weight: 100;
+    margin-top: 0.5em;
+    height: auto;
+    margin-bottom: 0.1em;
+    margin-top: 2em;
+}
+
+label > a {
+   color:skyblue;
+}
+
+p:nth-of-type(3) {
+    margin-top: 0;
+}
+p:nth-of-type(3):hover {
+    color: skyblue;
+    text-decoration: underline;
+}
+
+input {
+    margin-bottom: 1.2em;
+    border-radius: 0.5em;
+    border: solid 1px #E1E1E1;
+    height: 1.6em;
+}
+
+
+
+
+
+ form > button {
+    display: flex;
+    background-color: var(--flixbus-oranje); 
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.3em 1.5 ;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5em;
+    border: none; 
+    width: 100%;
+}
+
+
+button:hover {
+    background-color: rgba( 255, 160, 55, 0.8);
+    transition: background-color 0.5s ease-in;
+}
+
+button > a {
+    color: white;
+}
+
+footer {
+    margin-top: 5em;
+    height: 2em;
+    color: #E1E1E1;
+}
+
+#footer_image {
+    height: auto;
+    width: 100vw;
+}
+
+
+@media (min-width: 30em) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section {
+        width: 100%;
+    }
+    
+    form {
+        height: 20em;
+        margin: auto;
+    }
+}
+
+@media (min-width: 45em) {
+    
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    section {
+        width: 50%;
+    }
+    
+    form {
+        height: 20em;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
