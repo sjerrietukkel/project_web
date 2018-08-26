@@ -140,6 +140,7 @@ input {
 
 
 
+
  form > button {
     display: flex;
     background-color: var(--flixbus-oranje); 
@@ -168,6 +169,11 @@ footer {
     margin-top: 5em;
     height: 2em;
     color: #E1E1E1;
+}
+
+#footer_image {
+    height: auto;
+    width: 100vw;
 }
 
 

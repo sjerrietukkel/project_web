@@ -19,9 +19,8 @@ body > header {
 
 nav {
     display: flex;
-    align-items: center;
-    position: relative;
-    margin-top: -5%;
+    width: 100%;
+    margin-top: -7.5%
 }
 
 header img {
@@ -31,14 +30,20 @@ header img {
 }
 
 nav ul {
-    position: absolute;
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: blue;
     margin:auto;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+
 }
 
+nav > ul > li > a {
+    color: white; 
+}
 
 
 p {
@@ -49,12 +54,6 @@ p {
     margin: auto;
 }
 
-li {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    
-}
 
 
 body{
@@ -74,6 +73,13 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-image: url(/Screen%20Shot%202018-01-22%20at%2015.58.16.png);
+}
+
+section {
+    position: fixed;
+    width: 33%;
+    margin-top: 3em;
 }
 
 form {
@@ -84,7 +90,6 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 3em;
 }
 
 h1{
@@ -109,7 +114,7 @@ a {
 
  article > button {
     display: flex;
-    background-color: var(--flixbus-oranje); 
+    background-color: var(--flixbus-groen); 
     text-align: center; 
     color: white;
     font-size: 1.5em;
@@ -117,10 +122,72 @@ a {
     border-radius: 0.5em;
     border: none;
     margin: auto; 
-    max-width: 10rem;
+    width: 80%;
+    justify-content: center;
 }
 
-form > button {
+
+button:hover {
+    background-color: #80e82c;
+    transition: background-color 0.5s ease-in;
+}
+
+button > a {
+    color: white;
+}
+
+ul {
+    display: flex;
+}
+
+footer  li > a {
+    color: var(--flixbus-oranje);
+    background-color: cornsilk;
+    border-radius: 5em;
+    display: block;
+    padding: 0.4em;
+    margin: 0.2em;
+}
+
+footer li > a:hover {
+    background-color:white;  
+}
+
+form > p {
+    margin:0;
+    margin-top: 0.4em;
+    text-align: center;
+    display: inline-block;
+    align-self: center;
+    
+}
+
+input[type=range] {
+    margin-top: 0;
+    width: 80%;
+    align-self: center;
+    -webkit-appearance: none;
+}
+
+
+
+
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: var(--flixbus-oranje);
+    border: 1px solid #FFFFFF;
+    height: 11px; 
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    border-radius: 0.7em;
+    background: #E1E1E1;
+    margin-top: 0.4em;
+    height: 18px;
+}
+
+input[type=submit] {
     display: flex;
     background-color: var(--flixbus-oranje); 
     text-align: center; 
@@ -130,28 +197,45 @@ form > button {
     border-radius: 0.5em;
     border: none;
     margin: auto; 
-    max-width: 10rem;
+    height: auto;
+    width: 80%;
+    justify-content: center;
 }
 
-
-button:hover {
+input[type=submit]:hover {
     background-color: rgba( 255, 160, 55, 0.8);
     transition: background-color 0.5s ease-in;
 }
 
-button > a {
-    color: white;
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #ffffff;
+  height: 10px;
+  width: 10px;
+  border-radius: 15px;
+  background: var(--flixbus-oranje);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -1px;
 }
 
-header > div {
-    background-color: red;
-    height: 10px;
-    margin: auto;
-    width: 48em;
+
+
+article:hover {
+    background-image: none;
+    transition: 0.5s ease-out;
 }
 
-li > a {
-    color:white;
+body > footer {
+    background-image: url('../images/footer_image.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+}
+
+#footer_image {
+    height: auto;
+    width: 100vw;
 }
 
 /* Midden */
@@ -160,11 +244,6 @@ li > a {
     main {
         flex-direction: column;
      }  
-    
-    nav ul li:nth-child(2) {
-        margin-left: 1em;
-        
-    }
 }
 
 /* Groot */ 
@@ -175,6 +254,7 @@ li > a {
         grid-template-columns: 33% 33% 33%;
         grid-column-gap: 0.5em;
         grid-row-gap: 0.5em;
+        overflow-x:hidden;
     }   
      
      
@@ -207,6 +287,43 @@ li > a {
          height: 25em;
          width: 28%
      }
+     
+     body > footer {
+         background-image: url('/euro-footer.svg');
+         text-align: center;
+         height: auto;
+         grid-column-start: 1;
+         grid-column-end: 6;
+         grid-column-gap: 0;    
+     }
+     
+     nav {
+        display: flex;
+        width: 100%;
+        margin-top: -2.5%
+    }
+
+    header img {
+        width:auto;
+        height: 50px;
+    
+    }
+
+    nav ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content:flex-end;
+        margin-right: 1em;
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
+
+    }
+     
+     nav ul > il {
+         margin-right: 1em;
+     } 
 }
     
 
