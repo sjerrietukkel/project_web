@@ -7,7 +7,46 @@
     font: 14px/1.6 'Roboto Condensed', 'Arial', sans-serif;
 }
 
-form ul {
+.fa-bookmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.8em;
+    color: white;
+} 
+
+h2, form h2 {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 0.3em;
+    color: #444
+}
+
+footer h3, form h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0.3em;
+    color: #444
+}
+
+footer > h3 {
+    color: white;
+}
+article p {
+    color: white;
+}
+
+article h2 {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 0.3em;
+    color: white
+}
+
+article ul, form ul {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -34,6 +73,18 @@ form li:hover {
     transition: 0.1s ease-in;
 }
 
+article li {
+    border: solid 1px #76D528;
+    background-color: #76D528;
+    padding: 2px;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0.3em;
+    border-radius: 5px;
+    color: white;
+}
+
 .liactive {
     background-color: #76D528;
     color: white;
@@ -48,6 +99,7 @@ body > header {
     flex-direction: column;
     width: 100%;
     top: 0;
+    z-index: 5;
 }
 
 i {
@@ -104,14 +156,26 @@ main {
 }
 
 article{
+    position: relative;
     border-radius: .5em;
     margin: 0.5em;
-    border: solid 1px #E1E1E1;
+    border: solid 1px white;
     padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-image: url(/Screen%20Shot%202018-01-22%20at%2015.58.16.png);
+    z-index: -1;
+    background-image: url(../images/commercieel_thumbnail.jpg);
+    background-position: left 100%;
+    background-size: cover; 
+}
+
+article:nth-of-type(2){
+    background-image: url(../images/moeizaam_thumbnail.png);
+}
+
+article:nth-last-of-type(3){
+    background-image: url(../images/ongeluk_thumbnail.png);
 }
 
 form {
@@ -125,17 +189,6 @@ form {
     margin-top: 60px;
 }
 
-h1{
-    
-    text-align: center;
-}
-
-h2{
-    text-align: center;
-    font-weight: 100;
-    
-}
-
 p {
     text-align: center;
 }
@@ -145,7 +198,7 @@ a {
     text-decoration:none;
 }
 
- article > button {
+ article  button {
     display: flex;
     background-color: var(--flixbus-groen); 
     text-align: center; 
@@ -155,6 +208,7 @@ a {
     border-radius: 0.5em;
     border: none;
     margin: auto; 
+    margin-top: 1em;
     width: 80%;
     justify-content: center;
 }
