@@ -6,26 +6,25 @@
     <title>Flixbus Verhalen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" href="./images/icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
 <header>
-   <img id='logo' src="flixbus.png" alt='flixbus'>
+   <img id='logo' src="./images/flixbus_logo.svg" alt='flixbus'>
     <nav>
        
        <ul>
           <li> 
-            <a href="search">Zoeken</a>
+            <a href="search"><i class="fas fa-search"></i>Zoeken</a>
           </li>
           <li>
-              <a href="account">Mijn Account</a>
+              <a href="inlogpagina.html"><i class="fas fa-user"></i>Mijn Account</a>
           </li>
         </ul>
     </nav>
 </header>
-
-
- <form>
+<form>
     <header>
          <h2>Zoek jouw verhaal!</h2>
      </header>
@@ -35,12 +34,49 @@
      <input type=range min="0" max="10" step="2.5">
 
      <h2>Tags</h2>
-     
+     <ul>
+         <li class="tags">
+             Spannend
+         </li>
+         <li class="tags2">
+             Bloederig
+         </li>
+         <li class="tags3">
+             Opwindend
+         </li>
+         <li class="tags4">
+             Mysterieus
+         </li>
+    </ul>
+    <ul>
+        <li class="tags5">
+            Meeslepend
+        </li>
+        <li class="tags6">
+            Moeizaam
+        </li>
+        <li class="tags7">
+            Eng
+        </li>
+    </ul>
+    <ul>
+        <li class="tags8">
+            Spannend
+        </li>
+        <li class="tags9">
+            Bloederig
+        </li>
+        <li class="tags10">
+            Opwindend
+        </li>
+        <li class="tags11">
+            Mysterieus
+        </li>
+   </ul>
      <input type=submit value="Resultaten">
- </form> 
-     
- <main>     
-     <article>
+</form> 
+<main>     
+    <article>
         <header>
             <h2>Populair</h2>
             <ul>
@@ -152,9 +188,10 @@
         </footer>            
     </article>
 </main>
-    <footer>
-        <p>Daniel van der Schuur</p>
-        <img src="/images/footer_image.png" alt="footer_image" id="footer_image">
-    </footer>    
+<footer>
+    <p>Daniel van der Schuur</p>
+    <img src="./images/footer_image.png" alt="footer_image" id="footer_image">
+</footer>  
+<script src="./js/tags_active.js"></script>  
 </body>
 </html>

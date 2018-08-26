@@ -6,34 +6,46 @@
     <title>Inloggen Flixbus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" href="./images/icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
     <header>
-       <a href="index.html">
-           <img id='logo' src="/images/flixbus_logo.svg" alt='flixbus'>
-       </a>
+        <img id='logo' src="./images/flixbus_logo.svg" alt='flixbus'>
     </header>
     <main>
        <section>
-            <h1>Ik heb een account</h1>
-            <form>
+            <button class="facebook" >
+            <i class="fab fa-facebook-square"></i>
+            <a href="index.html">Verbind met Facebook</a>
+            </button>
+            <p>Registreren/aanmelden binnen enkele seconden.</p>
+            <p>(Er wordt niks op je muur geplaatst)</p>
+       </section>
+       <div>
+           <span>of</span>
+       </div>
+       <section id="accordion">
+            <h1>Ik heb een account<i class="fas fa-angle-up pijl1"></i></h1>
+            <form id="content">
                 <p>E-mailadres:</p>
                 <input type="text">
                 <p>Wachtwoord:</p>
                 <input type="password">
                 <p>Wachtwoord vergeten?</p>
-                <label for="checkboxFirst"><input type="checkbox" id="checkboxFirst" value="aangemeld blijven"> Aangemeld blijven</label>
-                <button>Inloggen</button>
+                <label for="checkboxFirst"><input type="checkbox" id="checkboxFirst" value="aangemeld blijven"> Ingelogd blijven</label>
+                <button>Aanmelden</button>
             </form>    
         </section>  
-        <section>
-            <h1>Ik wil me aanmelden</h1>
-            <form>
+        <div>
+            <span>of</span>
+        </div>
+        <section id="accordion2">
+            <h1>Ik wil me aanmelden<i class="fas fa-angle-up pijl2"></i></h1>
+            <form id="content2">
                 <p>E-mailadres:</p>
-                <input type="text">
-                <p>E-mailadres herhalen:</p>
-                <input type="text">
+                <input type="email" id="mail" name="mail">
+                <span class="error" aria-live="polite"></span>
                 <p>Wachtwoord:</p>
                 <input type="password">
                 <p>Wachtwoord herhalen:</p>
@@ -45,7 +57,8 @@
     </main>
     <footer>
         <p>Daniel van der Schuur. 2018</p>
-        <img src="/images/footer_image.png" alt="footer_image" id="footer_image">
+        <img src="./images/footer_image.png" alt="footer_image" id="footer_image">
     </footer>
+    <script src="./js/collapse.js"></script>
 </body>
 </html>
