@@ -26,13 +26,12 @@
 </header>
 <form>
     <header>
-         <h2>Zoek jouw verhaal!</h2>
+         <h2>Zoek jouw verhaal!</h2>   
      </header>
      <h3>Stemming</h3>
      <input type=range min="0" max="10" step="2.5">
      <h3>Intensiteit</h3>
      <input type=range min="0" max="10" step="2.5">
-
      <h3>Tags</h3>
      <ul>
          <li class="tags">
@@ -76,12 +75,13 @@
      <input type=submit value="Resultaten">
 </form> 
 <main>  
-    <h2>Populair</h2>   
+    <h2>Populair <i class="fas fa-angle-up"></i></h2>   
     <article>
         <header>
             <i class="far fa-bookmark"></i>
             <h2>Gesponsord</h2>
-            <i class="far fa-heart"></i>
+            <img src="images/hartje_leeg_icon.png" class="hartjeleeg">
+            <img src="images/hartje_vol_icon.png" class="hidden hartjevol">    
         </header>
         <p>Het regent pijpenstelen van het merk Dunhill en het waait flink als ik de bus van de GVB uitstapt...</p> 
         <footer>
@@ -91,14 +91,14 @@
                 <li>Bloederig</a></li>
                 <li>Zenuwachtig</a></li>
             </ul>
-            <button>Lees nu</button>  
+            <a href="gesponsord.html"><button>Lees nu</button></a>
         </footer>            
     </article>
     <article>
         <header>
             <i class="far fa-bookmark"></i>
             <h2>Moeizaam</h2>
-            <i class="far fa-heart"></i>
+            <img src="images/hartje_leeg_icon.png">
         </header>
         <p>De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de kinderwagen voort waarin mijn zoon ligt te slapen. Ik wou dat ik hem was...</p> 
         <footer>
@@ -115,7 +115,7 @@
         <header>
             <i class="far fa-bookmark"></i>
             <h2>Ongeluk</h2>
-            <i class="far fa-heart"></i>
+            <img src="images/hartje_leeg_icon.png">
         </header>
         <p>Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit...</p> 
        <footer>
@@ -130,8 +130,9 @@
     </article>
     <article>
         <header>
+            <i class="far fa-bookmark"></i>
             <h2>Gesponsord</h2>
-            <i class="far fa-heart"></i>
+            <img src="images/hartje_leeg_icon.png">
         </header>
         <p>Het regent pijpenstelen van het merk Dunhill en het waait flink als ik de bus van de GVB uitstapt...</p> 
         <footer>
@@ -146,8 +147,26 @@
     </article>
     <article>
         <header>
+            <i class="far fa-bookmark"></i>
             <h2>Gesponsord</h2>
-            <i class="far fa-heart"></i>
+            <img src="images/hartje_leeg_icon.png">
+        </header>
+        <p>Het regent pijpenstelen van het merk Dunhill en het waait flink als ik de bus van de GVB uitstapt...</p> 
+        <footer>
+            <h3>Tags</h3>
+            <ul>
+                <li>Spannend</a></li>
+                <li>Bloederig</a></li>
+                <li>Zenuwachtig</a></li>
+            </ul>
+            <button>Lees nu</button>  
+        </footer>            
+    </article>
+    <article>
+        <header>
+            <i class="far fa-bookmark"></i>
+            <h2>Gesponsord</h2>
+            <img src="images/hartje_leeg_icon.png">
         </header>
         <p>Het regent pijpenstelen van het merk Dunhill en het waait flink als ik de bus van de GVB uitstapt...</p> 
         <footer>
@@ -165,6 +184,7 @@
     <p>Daniel van der Schuur</p>
     <img src="./images/footer_image.png" alt="footer_image" id="footer_image">
 </footer>  
-<script src="./js/tags_active.js"></script>  
+<script src="./js/tags_active.js"></script> 
+<script src="./js/animatie_1_hartje.js"></script> 
 </body>
 </html>
