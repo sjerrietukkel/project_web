@@ -20,6 +20,7 @@
           </li>
           <li>
               <a href="inlogpagina.html"><i class="fas fa-user"></i>Mijn Account</a>
+              <img src="./images/notification_dot.png" alt="dot" class="notification hidden">
           </li>
         </ul>
     </nav>
@@ -75,10 +76,17 @@
      <input type=submit value="Resultaten">
 </form> 
 <main>  
-    <h2>Populair <i class="fas fa-angle-up"></i></h2>   
+    <div>
+        <select name="filter">
+            <option value="populair">Populair<i class="fas fa-angle-up"></i></option>
+            <option value="trending">Trending</option>
+            <option value="geliked">Geliked</option>
+        </select>
+    </div>   
     <article>
         <header>
-            <i class="far fa-bookmark"></i>
+            <img src="images/bookmark_leeg_icon.png" class="bookmarkleeg">
+            <img src="images/bookmark_vol_icon.png" class="hidden bookmarkvol">
             <h2>Gesponsord</h2>
             <img src="images/hartje_leeg_icon.png" class="hartjeleeg">
             <img src="images/hartje_vol_icon.png" class="hidden hartjevol">    
@@ -96,7 +104,8 @@
     </article>
     <article>
         <header>
-            <i class="far fa-bookmark"></i>
+            <img src="images/bookmark_leeg_icon.png">
+            <img src="images/bookmark_vol_icon.png" class="hidden">
             <h2>Moeizaam</h2>
             <img src="images/hartje_leeg_icon.png">
         </header>
@@ -108,12 +117,13 @@
                <li>Lastig</a></li>
                <li>Vermoeiend</a></li>
             </ul>
-            <button>Lees nu</button>  
+            <a href="moeizaam.html"><button>Lees nu</button></a>
         </footer>            
     </article>
     <article>
         <header>
-            <i class="far fa-bookmark"></i>
+            <img src="images/bookmark_leeg_icon.png">
+            <img src="images/bookmark_vol_icon.png" class="hidden">
             <h2>Ongeluk</h2>
             <img src="images/hartje_leeg_icon.png">
         </header>
@@ -125,16 +135,53 @@
                 <li>Moeizaam</a></li>
                 <li>Deprimerend</a></li>
             </ul>
-            <button>Lees nu</button>  
+            <a href="ongeluk.html"><button>Lees nu</button></a>
         </footer>            
     </article>
     <article>
         <header>
-            <i class="far fa-bookmark"></i>
-            <h2>Gesponsord</h2>
+            <img src="images/bookmark_leeg_icon.png">
+            <img src="images/bookmark_vol_icon.png" class="hidden">
+            <h2>Kater</h2>
             <img src="images/hartje_leeg_icon.png">
         </header>
-        <p>Het regent pijpenstelen van het merk Dunhill en het waait flink als ik de bus van de GVB uitstapt...</p> 
+        <p>Ik had vandaag bus 21 willen nemen naar het Centraal Station om naar de OBA te gaan en Stijloefeningen te lenen.</p> 
+        <footer>
+            <h3>Tags</h3>
+            <ul>
+                <li>Traag</a></li>
+                <li>Moeizaam</a></li>
+                <li>Deprimerend</a></li>
+            </ul>
+            <a href="https://jack792.github.io/project_web/kater.html"><button>Lees nu</button></a>  
+        </footer>            
+    </article>
+    <article>
+        <header>
+            <img src="images/bookmark_leeg_icon.png">
+            <img src="images/bookmark_vol_icon.png" class="hidden">
+            <h2>Vrijdag de 13e</h2>
+            <img src="images/hartje_leeg_icon.png">
+        </header>
+        <p>Met een halve jas trotseer ik een venijnig windje en een gemene miezerregen. De mensen kijken naar beneden, kop in de kraag...</p> 
+        <footer>
+            <h3>Tags</h3>
+            <ul>
+                <li>Ongeluk</a></li>
+                <li>Pech</a></li>
+                <li>Teleurstelling</a></li>
+            </ul>
+            <a href="https://jack792.github.io/project_web/vrijdag.html"><button>Lees nu</button></a>  
+        </footer>            
+    </article>
+    <article>
+        <header>
+            <img src="images/bookmark_leeg_icon.png">
+            <img src="images/bookmark_vol_icon.png" class="hidden">
+            <h2>Zombie</h2>
+            <img src="images/hartje_leeg_icon.png">
+        </header>
+        <p>Duizenden hongerige ondoden lopen zielloos over het stationsplein. Op zoek naar voedsel, naar half vergane hondenlijken, naar vers mensenvlees...</p> 
         <footer>
             <h3>Tags</h3>
             <ul>
@@ -142,49 +189,17 @@
                 <li>Bloederig</a></li>
                 <li>Zenuwachtig</a></li>
             </ul>
-            <button>Lees nu</button>  
-        </footer>            
-    </article>
-    <article>
-        <header>
-            <i class="far fa-bookmark"></i>
-            <h2>Gesponsord</h2>
-            <img src="images/hartje_leeg_icon.png">
-        </header>
-        <p>Het regent pijpenstelen van het merk Dunhill en het waait flink als ik de bus van de GVB uitstapt...</p> 
-        <footer>
-            <h3>Tags</h3>
-            <ul>
-                <li>Spannend</a></li>
-                <li>Bloederig</a></li>
-                <li>Zenuwachtig</a></li>
-            </ul>
-            <button>Lees nu</button>  
-        </footer>            
-    </article>
-    <article>
-        <header>
-            <i class="far fa-bookmark"></i>
-            <h2>Gesponsord</h2>
-            <img src="images/hartje_leeg_icon.png">
-        </header>
-        <p>Het regent pijpenstelen van het merk Dunhill en het waait flink als ik de bus van de GVB uitstapt...</p> 
-        <footer>
-            <h3>Tags</h3>
-            <ul>
-                <li>Spannend</a></li>
-                <li>Bloederig</a></li>
-                <li>Zenuwachtig</a></li>
-            </ul>
-            <button>Lees nu</button>  
+            <a href="http://www.thomasvanschie.com/ns/zombie.html"><button>Lees nu</button></a>  
         </footer>            
     </article>
 </main>
 <footer>
-    <p>Daniel van der Schuur</p>
+    <p>Daniel van der Schuur, 2018</p>
     <img src="./images/footer_image.png" alt="footer_image" id="footer_image">
 </footer>  
 <script src="./js/tags_active.js"></script> 
-<script src="./js/animatie_1_hartje.js"></script> 
+<script src="./js/animatie_1_hartje.js"></script>
+<script src="./js/animatie_2_bookmark.js"></script>
+<script src="./js/animatie_3_zoekbalk.js"></script>  
 </body>
 </html>

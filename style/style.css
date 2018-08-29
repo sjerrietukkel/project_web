@@ -7,26 +7,43 @@
     font: 14px/1.6 'Roboto Condensed', 'Arial', sans-serif;
 }
 
-h2 > i {
+.notification {
+    width: 15px;
+    height: 15px;
+}
+
+select > i {
     font-size: 1em;
-    margin-left: 5px;
     transform: rotate(180deg);
 }
 
-.fa-bookmark {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 1.8em;
-    color: white;
-} 
+select {
+    -webkit-appearance: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0.3em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.1em 1.5em;
+    background-color: white;
+    color: #444;
+    justify-content: center;
+    border: 1px #E1E1E1 solid;
+    border-radius: 3px;
+}
 
 h2, form h2 {
     font-weight: bold;
     font-size: 1.4em;
     text-align: center;
     margin: 0.3em;
-    color: #444
+    color: #444;
+}
+
+div {
+    width: 100%;
+    display: flex;
 }
 
 footer h3, form h3 {
@@ -49,7 +66,8 @@ article h2 {
     font-size: 1.4em;
     text-align: center;
     margin: 0.3em;
-    color: white
+    color: white;
+    display: inline;
 }
 
 article ul, form ul {
@@ -119,7 +137,7 @@ nav {
     margin-top: -0.6em;
 }
 
-body header img {
+body > header > img {
     position: relative;
     top: 25%;
     width: auto;
@@ -136,6 +154,10 @@ nav ul {
     text-decoration: none;
     list-style-type: none;
 
+}
+
+article > header {
+    text-align: center;
 }
 
 nav > ul > li > a {
@@ -171,31 +193,44 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-image: url(../images/commercieel_thumbnail.jpg);
+    background-image: url(../images/thumbnails/commercieel_thumbnail.jpg);
     background-position: left 100%;
     background-size: cover; 
 }
 
 article:nth-of-type(2){
-    background-image: url(../images/moeizaam_thumbnail.png);
+    background-image: url(../images/thumbnails/moeizaam_thumbnail.png);
 }
 
 article:nth-of-type(3){
-    background-image: url(../images/ongeluk_thumbnail.png);
+    background-image: url(../images/thumbnails/ongeluk_thumbnail.png);
 }
 
 article:nth-of-type(4){
-    background-image: url(../images/kater_thumbnail.png);
+    background-image: url(../images/thumbnails/kater_thumbnail.png);
 }
 
 article:nth-of-type(5){
-    background-image: url(../images/vrijdag_thumbnail.png);
+    background-image: url(../images/thumbnails/vrijdag_thumbnail.png);
 }
 
-article > header > img {
+article:nth-of-type(6){
+    background-image: url(../images/thumbnails/zombie_thumbnail.jpg);
+}
+
+article > header > img:nth-of-type(3), article > header > img:nth-of-type(4) {
     height: 20px;
     width: auto;
 }
+
+article > header > img:nth-of-type(1), article > header > img:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    height: 30px;
+    width: 25px;
+    color: white;
+} 
 
 form {
     border-radius: .5em;
@@ -339,9 +374,10 @@ body > footer {
         display: flex;
         width: 100%;
     }
+    
     h2 {
         display: block;
-        width: 100%;
+        width: 90%;
         text-align: center;
         color: #444;
     }
@@ -362,7 +398,7 @@ body > footer {
 
 /* Groot */ 
 
- @media (min-width: 45em) {
+ @media (min-width: 55em) {
     body {
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -374,10 +410,9 @@ body > footer {
 
     article h2 {
         display: inline;
-        margin-left: 35%;
     }
 
-    h2 {
+    select, h2 {
         margin-top: 50px;
     }
      
@@ -422,7 +457,6 @@ body > footer {
      nav {
         display: flex;
         width: 100%;
-        margin-top: -2.5%
     }
 
     nav {
@@ -461,7 +495,6 @@ body > footer {
 }
 
 
-
 @keyframes hartvol {
     0% {
         transform: scale(0.3);
@@ -477,7 +510,52 @@ body > footer {
     }
     100% {
         transform: scale(1);
-        
+    }
+}
+
+
+.bookmarkAnimatie {
+    animation: bookmarkvol 0.5s;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes bookmarkvol {
+    from {
+        height: 0;
+    }
+    to {
+        height: 20px;
+    }
+}
+
+.notificationAnimatie {
+    animation: notificatiealert 1.5s;
+}
+
+@keyframes notificatiealert {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(0);
+    }
+
+    42.5% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(0.4);
+    }
+
+    62.5% {
+        transform: scale(0.8)
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
     }
 }
     
