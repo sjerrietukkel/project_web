@@ -262,6 +262,10 @@ article p {
     color: white;
 }
 
+article header p {
+    font-weight: bold;
+}
+
 article h2 {
     font-weight: bold;
     font-size: 1.4em;
@@ -356,7 +360,7 @@ body > footer {
     width: 100%;
     text-align: center;
     color: #E1E1E1;
-    z-index: -1;
+    z-index: 1;
     margin-top: auto;
 }
 
