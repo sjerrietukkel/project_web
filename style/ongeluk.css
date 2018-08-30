@@ -89,8 +89,24 @@ footer > h3 {
 }
 
 
+
+body > footer {
+    width: 100%;
+    text-align: center;
+    color: #E1E1E1;
+    z-index: -1;
+    margin-top: auto;
+}
+
+
+footer > img {
+    height: auto;
+    width: 100vw;
+}
+
+
 main {
-    background-image: url(../images/verhalen/gesponsord_mobiel.jpg);
+    background-image: url(../images/verhalen/ongeluk_mobiel.jpg);
     background-size: cover;
     height: 140em;
     margin-top: 3em;
@@ -102,7 +118,7 @@ main {
 
 @media (min-width: 30em) {
     main {
-        background-image: url(../images/verhalen/gesponsord_tablet.jpg);
+        background-image: url(../images/verhalen/ongeluk_tablet.jpg);
         width: 100vw;
         height: 90em;
     }
@@ -114,7 +130,7 @@ main {
 
  @media (min-width: 45em) {
     main {
-        background-image: url(../images/verhalen/gesponsord_desktop.jpg);
+        background-image: url(../images/verhalen/ongeluk_desktop.jpg);
         width: 100vw;
         height: 120em;
     }
